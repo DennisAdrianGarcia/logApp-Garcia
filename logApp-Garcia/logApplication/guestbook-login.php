@@ -10,7 +10,7 @@
        $username = mysqli_real_escape_string($conn,$_POST['username']);
        $password = mysqli_real_escape_string($conn,$_POST['password']); 
        
-       $sql = "SELECT id FROM account WHERE username = '$username' and password = '$password'";
+       $sql = "SELECT id FROM USERACCOUNT WHERE username = '$username' and password = '$password'";
        $result = mysqli_query($conn, $sql);
        $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
        
